@@ -25,6 +25,13 @@ def test():
     
     return 1
 
+@cli.command()
+def seed_db():
+    """Seeds the database."""
+    db.session.add(User(username='lebron', email='lebronjames@lakers.org'))
+    db.session.add(User(username='marcus', email='marcussmart@lakers.org'))
+    db.session.commit()
+
 
 if __name__=='__main__':
     cli()
