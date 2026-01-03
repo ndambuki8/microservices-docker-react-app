@@ -17,5 +17,10 @@ class TestUserService(BaseTestCase):
         self.assertIn('success', data['status'])
 
 
+    # RESTful Routes: /users for POST
+    def test_add_user(self):
+        """Ensure a new user can be added to the database."""
+
+
 if __name__ == '__main__':
     unnittest.main()
