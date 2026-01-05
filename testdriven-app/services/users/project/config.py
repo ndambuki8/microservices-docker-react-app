@@ -1,4 +1,5 @@
 # services/users/projectc/config.py
+import os
 
 class BaseConfig:
     """Base configuration"""
