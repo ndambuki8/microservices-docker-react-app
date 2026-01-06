@@ -87,4 +87,5 @@ def get_all_users():
 
 @users_blueprint.route('/', methods=['GET'])
 def index():
+    users = User.query.all()
     return render_template('index.html')
