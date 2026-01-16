@@ -5,6 +5,10 @@ __pycache__/
 credentials.json
 cloud-storage.json
 data
+
+# Test coverage
+htmlcov
+
 # C extensions
 *.so
 known_hosts
